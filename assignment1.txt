@@ -1,0 +1,18 @@
+Q1-WAP IN JAVA THAT PRINTS HELLO WORLD TO SCREEN
+Program-
+class HelloWorld
+{
+             public static  void main(String args[]) 
+             {
+              	System.out.println("HelloWorld!");
+             }
+}
+Q2- WAP IN JAVA THAT PRINTS YOUR NAME
+Program-
+class hello
+{
+             public static void main(String args[]) 
+             {
+              	System.out.println("VISHAV KOUSHAL");
+             }
+}
