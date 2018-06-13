@@ -85,4 +85,50 @@ public class array1 {
         System.out.println("Second largest is"+" "+arr[8]); 
     }          
 }
+q4-
+program-
+package javaapplication1;
+import java.util.*;
+class SortWave
+{
+        public void swap(int arr[], int a, int b)
+	{
+		int temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
+	}
+        public void sortInWave()
+	{
+		
+            int []arr;
+            arr=new int[50];
+            int n,i;
+            Scanner e=new Scanner(System.in);
+            System.out.print("enter the size of array");
+            n = e.nextInt();
+            for(i=0;i<n;i++)
+            {
+             arr[i]=e.nextInt();
+            }
+             for (i=0; i<n-1; i += 2)
+              {
+	          swap(arr, i, i+1);
+	      }
+            for(i=0;i<n;i++)
+         {
+             System.out.print(" "+arr[i]);
+         }
+  }
+        
+}
+package javaapplication1;
+public class JavaApplication1 
+{
+    public static void main(String []args)
+    {
+     SortWave ar1 = new SortWave();
+       ar1.sortInWave();
+    }
+}
 
+        
