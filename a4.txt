@@ -1,0 +1,88 @@
+q1-
+public class Rectangle
+{
+    double length;
+    double breadth;
+    Rectangle(int length,int breadth)
+    {
+       this.length=length;
+       this.breadth=breadth;
+    }       
+    
+    public void calculateArea()
+    {
+        System.out.println("Area is"+length*breadth);
+    }
+}
+package javaapplication1;
+public class JavaApplication1 
+{
+    public static void main(String []args)
+    {
+       Rectangle rectangle = new Rectangle(4,5);
+       rectangle.calculateArea();
+    }
+}
+q2-
+program-
+package javaapplication1;
+public class JavaApplication1 
+{
+    public static void main(String []args)
+    {
+       complex complex1 = new complex();
+       complex1.display();
+    }
+}
+package javaapplication1;
+import java.util.Scanner;
+public class complex 
+{
+        int real;
+        int img;
+    complex(){ }
+    public void display()
+    {
+         Scanner e=new Scanner(System.in);
+         System.out.print("enter real part");
+         real=e.nextInt();
+         System.out.print("enter img part");
+         img=e.nextInt();
+        System.out.println("the complex number is"+real+"+"+img+"i");
+    }
+}
+q3-
+program-
+package javaapplication1;
+import java.util.Scanner;
+public class array1 {
+     public static void main(String args[]) 
+    {
+        int []arr;
+        arr= new int[10];
+          int i;
+          int t;
+          
+           Scanner e=new Scanner(System.in);
+         System.out.print("enter the elements of array");
+         
+          for(i=0;i<9;i++)
+          {
+              arr[i]=e.nextInt();
+          }   
+          for(i=0;i<arr.length;i++)
+          {
+             for(int j=i+1;j<arr.length;j++)
+             {    
+                 if(arr[i]>arr[j])
+                 {  
+                        t=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=t;
+                 }
+            }
+          }      
+        System.out.println("Second largest is"+" "+arr[8]); 
+    }          
+}
+
