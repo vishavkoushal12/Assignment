@@ -1,0 +1,29 @@
+
+/**
+ *
+ * @author Dell
+ */
+public class Rectangle
+{
+    double length;
+    double breadth;
+    Rectangle(int length,int breadth)
+    {
+       this.length=length;
+       this.breadth=breadth;
+    }       
+    
+    public void calculateArea()
+    {
+        System.out.println("Area is"+length*breadth);
+    }
+}
+package javaapplication1;
+public class JavaApplication1 
+{
+    public static void main(String []args)
+    {
+       Rectangle rectangle = new Rectangle(4,5);
+       rectangle.calculateArea();
+    }
+}
