@@ -1,0 +1,173 @@
+q1-
+program-
+
+package static12;
+class Driverclass 
+{
+      public static void main(String []args)
+       {
+           static1.display();
+        }
+ }
+package static12;
+public class static1
+{
+     static void display()
+     {
+       
+         System.out.println("in static block");
+     }    
+}
+
+q2-
+program-
+package animal1;
+ class Driverclass {
+              public static void main(String []args)
+              {
+                         animal an=new animal();
+                         an.speak();
+                         Dog dog=new Dog();
+                         dog.speak();
+                         lion l1=new lion();
+                         l1.speak();
+                         
+              }
+              
+}
+package animal1;
+class animal
+{
+    String breed;
+    String color;
+    public void speak()
+    {
+        System.out.println("Ani"
+                + "mal");
+    }
+}
+package animal1;
+
+
+class Dog extends animal
+{
+    String breed="dog";
+    String color="Brown";        
+    public void speak()
+    {
+         System.out.println("Dog");
+    }
+}
+
+package animal1;
+
+ class Cat 
+{
+    String breed="cat";
+    String color="Black";           
+     public void speak()
+    {
+        System.out.println("Cat");
+    }
+}
+
+package animal1;
+
+public class lion {
+ String breed="lion";
+    String color="Brown";        
+    public void speak()
+    {
+         System.out.println("I am lion");
+    }
+}
+q3-
+program-
+package funcover;
+public class NewClass
+{
+   public static void main(String args[])
+   {
+   NewClass1 n1=new NewClass1();
+   n1.print();
+   n1.print(4);
+   n1.print(5.6f);
+   }
+} 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package funcover;
+
+/**
+ *
+ * @author Dell
+ */
+class NewClass1 
+{
+   int a;
+   float b;
+   
+     void print()
+     {
+      System.out.println("function overloading");
+     }
+     void print(int a)
+     {
+         this.a=a;
+    System.out.println(""+a);
+     } 
+     void print(float b)
+     {
+            this.b=b;
+    System.out.println(""+b);
+     }
+}
+	
+q4-
+program-
+package array123;
+
+import java.util.Scanner;
+
+public class array12
+{   
+    public static void main(String []args )
+    {
+         int []arr;
+            arr=new int[50];
+       int n,i;
+       Scanner e=new Scanner(System.in);
+         System.out.print("enter the size of array");
+         n = e.nextInt();
+         for(i=0;i<n;i++)
+         {
+             arr[i]=e.nextInt();
+         }
+         int max=1,len=1;
+         int maxIndex;
+         for(i=1;i<arr.length;i++)
+         {
+             if(arr[i]>arr[i-1])
+                 len++;
+             else
+             {
+                 if(max < len)
+                 {
+                     max=len;
+                 }    
+                 len=1;
+             }
+         }
+         if(max < len)
+         max=len;
+         maxIndex=n- max;
+         for(i=maxIndex;i<max+maxIndex;i++)
+         {
+             System.out.print(arr[i]+" ");
+         }
+         
+    }    
+}
