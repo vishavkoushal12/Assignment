@@ -1,0 +1,86 @@
+q1-
+program-
+package animal12;
+
+public interface animal
+{
+    public void eat();
+    public void speak();
+}
+package animal12;
+ public class Dog implements animal{
+ public void eat()
+    {
+     System.out.println("Dog eats");   
+    }
+     public void speak()
+    {
+     System.out.println("Dog speaks");   
+    }    
+     public static void main(String args[])
+     {
+         Dog c=new Dog();
+         c.eat();
+         c.speak();
+     }
+}
+
+package animal12;
+
+ public class Dog implements animal{
+ public void eat()
+    {
+     System.out.println("Dog eats");   
+    }
+     public void speak()
+    {
+     System.out.println("Dog speaks");   
+    }    
+     public static void main(String args[])
+     {
+         Dog c=new Dog();
+         c.eat();
+         c.speak();
+     }
+}
+q2-
+program-
+package abstract1;
+abstract class Animal 
+{
+    String color="red";
+    String breed="xyz";
+    String name="abc";
+    public abstract void eat();
+    public void speak()
+    {
+         System.out.println("speaks");
+    }
+}
+
+package abstract1;
+
+public class Dog extends Animal {
+  public void eat()
+  {
+      System.out.println("dog eats");
+  }
+  public static void main(String args[])
+  {
+      Animal obj=new Dog();
+      obj.eat();
+      obj.speak();
+      
+  }
+q3-
+package string1;
+public class NewClass{
+    public static void main(String []args)
+    {     
+     int a=Integer.parseInt(args[0]);
+     int b=Integer.parseInt(args[1]);
+     int c;
+     c=a+b;
+     System.out.println("sum is "+c);
+    }
+}
