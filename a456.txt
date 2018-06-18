@@ -1,0 +1,120 @@
+q1-
+program-
+
+package string1;
+
+
+public class NewClass1 
+{
+    public static void main(String args[])
+    {
+     String first="xyz";
+      StringBuilder second=new StringBuilder();
+      for(int i=first.length()-1;i>=0;i--)
+      {
+          second =second.append(first.charAt(i));
+      }
+      System.out.println(""+second);
+   } 
+}
+
+q2-
+program-
+
+package string1;
+import java.util.Scanner;
+public class NewClass3 {
+public static void main(String []args)
+    {
+        String str;
+        Scanner str1=new Scanner(System.in);
+        str =str1.nextLine();
+        int i,j;
+        
+        for(i=0;i<str.length();i++)
+        {
+            for(j=i+1;j<=str.length();j++)
+            {
+                System.out.println(str.substring(i,j));
+            }
+        }
+    }
+}
+q3-
+program-
+package string1;
+
+public class NewClass2 
+{
+    public static void main(String args[])
+    {
+        int i;
+        String str="vishav";
+        String str1=str.replaceAll("[aeiouAEIOU]","");
+        System.out.println(str1);
+    }
+}
+q4-
+program-
+
+package javaapplication1;
+public class pattern6 {
+   public static void main(String args[])
+   {
+       int i,j;
+       char ch=97;
+       for(i=0;i<3;i++)
+       {
+           ch=97;
+           for(j=0;j<=i;j++)
+           {
+                   System.out.print(ch);
+                   ch++;
+           }
+           System.out.println("");
+       }
+   }
+}
+q5-
+program-
+
+package string1;
+
+import java.util.Scanner;
+public class NewClass6 {
+public static void main (String[] args)
+  {
+    
+    String test ;
+ 
+    String seq;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the string");
+    test=sc.nextLine();
+    System.out.println("enter the substring");
+    seq=sc.nextLine();
+    
+    boolean bool = test.contains(seq);
+    System.out.println("String found?: " + bool);
+   }    
+}
+
+q6-
+program-
+package string1;
+public class NewClass5 {
+     public static void main(String args[])
+    {
+    String str="Welcome to java";
+    int count=1;
+    int i;
+         for(i=0;i<str.length()-1;i++)
+         {
+           if(str.charAt(i)==' ' && str.charAt(i+1)!=' ')
+           {
+            count++;   
+           }
+         }
+         System.out.println("number of words in a string : "+count);
+    }
+} 
