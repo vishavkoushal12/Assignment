@@ -1,0 +1,18 @@
+package javaapplication1;
+import java.io.*;
+public class NewClass4 {
+    public static void main(String []args) throws IOException
+    {
+         File file1=new File("C:\\Users\\Dell\\Desktop\\sample1.txt");
+         File file2=new File("C:\\Users\\Dell\\Desktop\\sample2.txt");
+         FileReader in=new FileReader(file1);
+         FileWriter out = new FileWriter(file2,true);
+         int c;
+         while((c=in.read())!=-1)
+         {
+         out.write((char)c);
+         }
+         in.close();
+         out.close();
+    }
+ }
