@@ -1,0 +1,72 @@
+q1-
+
+package javaapplication1;
+import java.util.*;
+
+public class NewClass6 {
+public static void main(String []args) throws Exception
+{
+    Scanner in=new Scanner(System.in);
+      int n=in.nextInt();
+      String s=in.nextLine();
+    ArrayList<String>a1=new ArrayList<String>(n);
+    for(int i=0;i<n;i++)
+    {
+        a1.add(i,s);
+    }
+    //a1.remove(1);    
+   int a=2*a1.size();
+        
+    a1.ensureCapacity(n);
+    for(int i=n;i<a;i++)
+    {
+        a1.add(i,s);
+    }        
+    
+     for(String temp:a1)
+    {
+        System.out.println(temp);
+    }
+    
+    System.out.println("size of array list  : " + a1.size());
+   
+   
+}
+}
+
+                                                                                   or 
+
+package javaapplication1;
+import java.util.*;
+
+public class NewClass6 {
+public static void main(String []args) throws Exception
+{
+    Scanner in=new Scanner(System.in);
+      int n=in.nextInt();
+      String s=in.next();
+    ArrayList<String>a1=new ArrayList<String>(4);
+    a1.add("Born");
+    a1.add("to ");
+    a1.add("be ");
+    a1.add("legend");
+    //a1.remove(1);    
+   n=2*a1.size();
+        
+    a1.ensureCapacity(n);
+    
+    a1.add("i");
+    a1.add("am");
+    a1.add("a");
+    a1.add("king");
+     for(String temp:a1)
+    {
+        System.out.println(temp);
+    }
+    
+    System.out.println("size of array list  : " + a1.size());
+   
+   
+}
+}
+
