@@ -1,0 +1,46 @@
+q1-
+program-
+package javaapplication1;
+
+import java.util.*;
+public class NewClass8 
+{
+       public static void main(String[] args )
+       {
+           HashSet hashset=new HashSet();
+           hashset.add("J");
+           hashset.add("A");
+           hashset.add("V");
+           hashset.add("A");
+             
+           HashSet hashset1=new HashSet();
+          
+           hashset1.add("A");
+           hashset1.add("V");
+          
+           hashset.retainAll(hashset1);
+           System.out.println(hashset);
+       }
+}
+q2-
+program-
+package javaapplication1;
+
+import java.util.*;
+public class NewClass9 {
+  public static void main(String []args)
+  {
+      Map obj = new HashMap();
+      obj.put("Burger",130);
+      obj.put("pizza",200);
+      obj.put("Beer",100);
+      
+      System.out.println(obj);
+      obj.put("Burger",130);
+      obj.put("pizza",200);
+      obj.put("Beer",100);
+      
+      obj.replace("Beer",100,150);
+       System.out.println(obj);
+  }
+}
