@@ -1,0 +1,59 @@
+
+package javaapplication1;
+        
+import java.util.*;
+public class movies12 
+{
+    
+    
+   public static void main(String []args)
+   {
+       Movies obj1=new Movies(2018,1,"race 3");
+       Movies obj2=new Movies(2016,4,"Ghost rider");
+       Movies obj3=new Movies(2017,3,"Tiger jinda hai");
+       Movies obj4=new Movies(2016,4,"Fast and furious 7");
+       Movies obj5=new Movies(2018,4,"Sanju");
+       Movies obj6=new Movies(2016,5,"Bahubali");
+       ArrayList<Movies> list= new ArrayList<Movies>();   
+       list.add(obj1);
+       list.add(obj2);
+       list.add(obj3);
+       list.add(obj4);
+       list.add(obj5);
+       list.add(obj6);
+       for(Movies movies : list)
+    {
+       System.out.println(movies.getYear()+" "+movies.getRating()+" "+movies.getMovie_name()); 
+    }
+
+   }
+}
+package javaapplication1;
+public class Movies
+{
+   String movie_name;
+   int year;
+   int Rating;
+    Movies(int year,int rating,String movie_name)
+    {
+       this.year=year;
+       this.Rating=rating;
+       this.movie_name=movie_name;
+    }
+
+    public String getMovie_name() 
+     {
+        return movie_name;
+     } 
+
+     public int getYear() 
+     {
+        return year;
+     }
+
+    public int getRating() 
+    {
+        return Rating;
+    }
+        
+}
