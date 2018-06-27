@@ -61,6 +61,36 @@ q1-
 program-
 q2-
 program-
+package javaapplication1;
+import java.util.Arrays;
+public class generic1 {
+  public static <T>void printArray(T []inputArray)
+  {
+       Arrays.sort(inputArray);
+      for(T var:inputArray)
+      {
+         
+       System.out.print(var+" ");
+       
+      }
+  }
+  public static void main(String []args)
+  {
+      Integer[] Array1={2,1,4,6,5,3};
+      Double[] Array2={1.1,2.2,3.3,4.4,5.5};
+      Character[] Array3={'B','A','D','C','E','F'};
+      System.out.println("Array integerArray conatins : ");
+      printArray(Array1);
+      System.out.println();
+      System.out.println("Array DoubleArray conatins : ");
+      printArray(Array2);
+      System.out.println();
+      System.out.println("Array CharacterArray conatins : ");
+      printArray(Array3);
+      System.out.println();
+  }
+}
+
 q3-
 program-
   /*
