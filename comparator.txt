@@ -57,3 +57,158 @@ public class Movies
     }
         
 }
+q1-
+program-
+q2-
+program-
+q3-
+program-
+  /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+/**
+ *
+ * @author Dell
+ */
+public class generic1 {
+  public static <T>void printArray(T []inputArray)
+  {
+      for(T var:inputArray)
+      {
+       System.out.print(var+" ");
+       
+      }
+  }
+  public static void main(String []args)
+  {
+      Integer[] Array1={1,2,3,4,5,6};
+      Double[] Array2={1.1,2.2,3.3,4.4,5.5};
+      Character[] Array3={'A','B','C','D','E','F'};
+      System.out.println("Array integerArray conatins : ");
+      printArray(Array1);
+      System.out.println();
+      System.out.println("Array DoubleArray conatins : ");
+      printArray(Array2);
+      System.out.println();
+      System.out.println("Array CharacterArray conatins : ");
+      printArray(Array3);
+      System.out.println();
+  }
+}
+q4-
+program-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+/**
+ *
+ * @author Dell
+ */
+import java.util.*;
+public class person1 {
+public static void main(String []args)
+{
+    Person p1=new Person("abc",19);
+    Person p2=new Person("yai",18);
+    Person p3=new Person("bag",17);
+    Person p4=new Person("new",20);
+    
+    ArrayList<Person>a1=new ArrayList<Person>();
+    a1.add(p1);
+     a1.add(p2);
+      a1.add(p3);
+       a1.add(p4);
+       
+       NameCompare nameCompare =new NameCompare();
+       Collections.sort(a1,nameCompare);
+       System.out.println("sorted list according to name :");
+       for(Person person:a1)
+       {
+           System.out.println(person.getName()+" "+person.getAge());
+       }
+       System.out.println("sorted list according to age ");
+       NewCompare1 n1=new NewCompare1();
+       Collections.sort(a1,n1);
+       for(Person person:a1)
+       {
+           System.out.println(person.getName()+" "+person.getAge());
+       }
+       
+}
+}
+
+package javaapplication1;
+import java.util.Comparator;
+
+public class Person <Person>
+{
+  
+   private String name;
+   private int age;
+     
+   public String getName()
+  {
+      return name;
+      
+  }
+   public int getAge()
+  {
+      return age;
+      
+  }
+  
+  Person(String name,int age)
+  {
+      this.name=name;
+      this.age=age;
+  }
+   
+    //@Override
+
+    //@Override
+    
+     
+     
+    
+}
+package javaapplication1;
+
+
+import java.util.Comparator;
+public class NewCompare1 implements Comparator <Person> 
+{
+
+    //@Override
+    public int compare(Person t, Person t1)
+    {
+     return t.getAge()-t1.getAge();
+    }
+
+    
+    
+    
+}
+
+package javaapplication1;
+
+import java.util.Comparator;
+public class NameCompare implements Comparator<Person> 
+{
+
+    //@Override
+    public int compare(Person t, Person t1) 
+    {
+        return t.getName().compareTo(t1.getName());
+   }
+    
+}
+
+
