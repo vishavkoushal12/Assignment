@@ -59,6 +59,124 @@ public class Movies
 }
 q1-
 program-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+/**
+ *
+ * @author Dell
+ */
+import java.util.*;
+
+public class date {
+
+    public static HashMap<String, String> date = new HashMap<String, String>();
+    public static HashMap<String, String> month = new HashMap<String, String>();
+    public static HashMap<String, String> yL = new HashMap<String, String>();
+    public static HashMap<String, String> yR = new HashMap<String, String>();
+
+    public static void Data() {
+        
+        date.put("01", "First");
+        date.put("02", "Second");
+        date.put("03", "Third");
+        date.put("04", "Fourth");
+        date.put("05", "Fifth");
+        date.put("06", "Sixth");
+        date.put("07", "Seventh");
+        date.put("08", "Eighth");
+        date.put("09", "Nineth");
+        date.put("10", "Tenth");
+        date.put("11", "Eleventh");
+        date.put("12", "Tweleveth");
+        date.put("13", "Thirteenth");
+        date.put("14", "Fourteenth");
+        date.put("15", "Fifteenth");
+        date.put("16", "Sixteenth");
+        date.put("17", "Seventeenth");
+        date.put("18", "Eighteenth");
+        date.put("19", "Nineteenth");
+        date.put("20", "Twenty");
+        date.put("21", "Twenty First");
+        date.put("22", "Twenty Second");
+        date.put("23", "Twenty Third");
+        date.put("24", "Twenty Fourth");
+        date.put("25", "Twent Fifth");
+        date.put("26", "Twenty Sixth");
+        date.put("27", "Twenty Seventh");
+        date.put("28", "Twenty Eighth");
+        date.put("29", "Twenty Nineth");
+        date.put("30", "Thirty");
+        date.put("31", "Thirty First");
+
+        month.put("01", "January");
+        month.put("02", "February");
+        month.put("03", "March");
+        month.put("04", "April");
+        month.put("05", "May");
+        month.put("06", "June");
+        month.put("07", "July");
+        month.put("08", "August");
+        month.put("09", "September");
+        month.put("10", "October");
+        month.put("11", "November");
+        month.put("12", "December");
+
+        yL.put("07", "Seven");
+        yL.put("08", "Eight");
+        yL.put("09", "Nine");
+        yL.put("10", "Ten");
+        yL.put("11", "Eleven");
+        yL.put("12", "Tweleve");
+        yL.put("13", "Thirteen");
+        yL.put("14", "Fourteen");
+        yL.put("15", "Fifteen");
+        yL.put("16", "Sixteen");
+        yL.put("17", "Seventeen");
+        yL.put("18", "Eighteen");
+        yL.put("19", "Nineteen");
+        yL.put("20", "Twenty");
+        yL.put("21", "Twenty One");
+        yL.put("22", "Twenty Two");
+
+        yR.put("00", "Hundred");
+        yR.put("10", "Ten");
+        yR.put("20", "Twenty");
+        yR.put("30", "Thirty");
+        yR.put("40", "Forty");
+        yR.put("50", "Fifty");
+        yR.put("60", "Sixty");
+        yR.put("70", "Seventy");
+        yR.put("80", "Eighty");
+        yR.put("90", "Ninety");
+    }
+
+    public static String Inenglish(String dateInput) {
+        String d = dateInput.substring(0, 2);
+        String m = dateInput.substring(3, 5);
+        String Y1 = dateInput.substring(6, 8);
+        String Y2 = dateInput.substring(8, 10);
+        return date.get(d) + " " + month.get(m) + " " + yL.get(Y1) + " " + yR.get(Y2);
+    }
+
+    public static void main(String args[]) {
+
+        Data();
+
+        System.out.println("06-05-1990");
+        System.out.println(Inenglish("06-05-1990"));
+
+        System.out.println("\n09-11-1980");
+        System.out.println(Inenglish("09-11-1980"));
+
+    }
+}
+
+
 q2-
 program-
 package javaapplication1;
