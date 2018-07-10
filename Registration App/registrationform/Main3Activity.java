@@ -1,4 +1,4 @@
-package com.ashutoshrana.registrationform;
+package com.vishav.registrationform;
 
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
